@@ -1,3 +1,4 @@
+## Table of Contents
 - [Architecture Overview](#architecture-overview)
 - [Pre-requisites](#pre-requisites)
   - [Create container registry](#create-container-registry)
