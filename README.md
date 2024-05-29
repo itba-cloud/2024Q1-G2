@@ -1,7 +1,7 @@
+- [Architecture Overview](#architecture-overview)
 - [Pre-requisites](#pre-requisites)
   - [Create container registry](#create-container-registry)
   - [Build and push the image](#build-and-push-the-image)
-- [Architecture Overview](#architecture-overview)
 - [Terraform](#terraform)
   - [Requirements](#requirements)
   - [Providers](#providers)
@@ -11,6 +11,9 @@
   - [Outputs](#outputs)
   - [Functions](#functions)
   - [Meta-arguments](#meta-arguments)
+
+# Architecture Overview
+![architecture-overview](https://i.imgur.com/NeOvXwK.png)
 
 # Pre-requisites
 In order to give our cluster a base Image that will be used to compute the data and make the analysis we need to build an Image using docker , and store it on container Registry.
@@ -24,10 +27,6 @@ In ECR Service , click on view push commands.
 On your local machine , go the directory where our Dockerfile is stored and copy paste all commands
 
 Verify that the image is in the repository
-
-# Architecture Overview
-![architecture-overview](https://i.imgur.com/NeOvXwK.png)
-
 
 # Terraform
 ## Requirements
