@@ -75,9 +75,9 @@ No outputs.
 | Name | Source | Purpose |
 |------|--------|---------|
 | <a name="function_jsonencode"></a> [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode) | [./modules/compute/main.tf](modules/compute/main.tf#L16) | Encode the `container_definitions` to a string from a JSON format|
-| <a name="function_sha1"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/sha1) | [./modules/compute/main.tf](modules/application/main.tf#L178) | Computes the SHA1 of the API resources for redeployment purposes|
-| <a name="function_toset"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/toset) | [./modules/compute/main.tf](modules/database/main.tf#L3) | Converting `var.table_names` to a set for iteration purposes|
-| <a name="function_lower"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/lower) | [./modules/compute/main.tf](main.tf#L3) | Forcing lowercase for `var.vpc_name` to mantain styling consistency|
+| <a name="function_sha1"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/sha1) | [./modules/application/main.tf](modules/application/main.tf#L178) | Computes the SHA1 of the API resources for redeployment purposes|
+| <a name="function_toset"></a> [toset](https://developer.hashicorp.com/terraform/language/functions/toset) | [./modules/database/main.tf](modules/database/main.tf#L3) | Converting `var.table_names` to a set for iteration purposes|
+| <a name="function_lower"></a> [lower](https://developer.hashicorp.com/terraform/language/functions/lower) | [./main.tf](main.tf#L3) | Forcing lowercase for `var.vpc_name` to mantain styling consistency|
 
 ## Meta-arguments
 <!-- END_TF_DOCS -->
