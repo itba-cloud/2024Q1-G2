@@ -12,11 +12,6 @@ module "database" {
   db_billing_mode = upper(var.db_billing_mode)
 }
 
-module "security" {
-  source = "./modules/security"
-  vpc_id = module.network.vpc_id
-}
-
 module "application" {
   source     = "./modules/application"
   account_id = var.account_id
