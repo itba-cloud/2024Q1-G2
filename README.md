@@ -1,4 +1,10 @@
-<!-- BEGIN_TF_DOCS -->
+# Pre-requisites
+
+# Architecture Overview
+![architecture-overview](https://i.imgur.com/NeOvXwK.png)
+
+
+# Terraform
 ## Requirements
 
 | Name | Version |
@@ -11,13 +17,13 @@ No providers.
 
 ## Modules
 
-| Name | Source |
-|------|--------|
-| <a name="module_application"></a> [application](modules/application) | ./modules/application |
-| <a name="module_compute"></a> [compute](modules/compute) | ./modules/compute |
-| <a name="module_database"></a> [database](modules/database) | ./modules/database |
-| <a name="module_network"></a> [network](modules/network) | ./modules/network |
-| <a name="module_security"></a> [security](modules/security) | ./modules/security |
+| Name | Source | Purpose |
+|------|--------|---------|
+| <a name="module_application"></a> [application](modules/application) | ./modules/application | Custom module that initiates both AWS Lambda & AWS API Gateway |
+| <a name="module_compute"></a> [compute](modules/compute) | ./modules/compute | Custom module that initiates an EventBride Scheduler cron, an ECS cluster and defines an ECS task |
+| <a name="module_database"></a> [database](modules/database) | ./modules/database | External module that initates two DynamoDB databases |
+| <a name="module_network"></a> [network](modules/network) | ./modules/network | Custom module that initiates the VPC and its components |
+| <a name="module_security"></a> [security](modules/security) | ./modules/security | Custom module that initiates a SG |
 
 ## Resources
 
@@ -39,4 +45,8 @@ No resources.
 ## Outputs
 
 No outputs.
+
+## Functions
+
+## Meta-arguments
 <!-- END_TF_DOCS -->
