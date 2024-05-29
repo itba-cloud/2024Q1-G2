@@ -11,13 +11,13 @@ No providers.
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_application"></a> [application](#module\_application) | ./modules/application | n/a |
-| <a name="module_compute"></a> [compute](#module\_compute) | ./modules/compute | n/a |
-| <a name="module_database"></a> [database](#module\_database) | ./modules/database | n/a |
-| <a name="module_network"></a> [network](#module\_network) | ./modules/network | n/a |
-| <a name="module_security"></a> [security](#module\_security) | ./modules/security | n/a |
+| Name | Source |
+|------|--------|
+| <a name="module_application"></a> [application](modules/application) | ./modules/application |
+| <a name="module_compute"></a> [compute](modules/compute) | ./modules/compute |
+| <a name="module_database"></a> [database](modules/database) | ./modules/database |
+| <a name="module_network"></a> [network](modules/network) | ./modules/network |
+| <a name="module_security"></a> [security](modules/security) | ./modules/security |
 
 ## Resources
 
