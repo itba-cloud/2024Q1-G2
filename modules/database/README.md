@@ -1,4 +1,12 @@
 <!-- BEGIN_TF_DOCS -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+No providers.
+
 ## Modules
 
 | Name | Source | Version |
