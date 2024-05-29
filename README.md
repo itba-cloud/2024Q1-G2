@@ -74,10 +74,15 @@ No outputs.
 ## Functions
 | Name | Source | Purpose |
 |------|--------|---------|
-| <a name="function_jsonencode"></a> [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode) | [./modules/compute/main.tf](modules/compute/main.tf#L16) | Encode the `container_definitions` to a string from a JSON format|
-| <a name="function_sha1"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/sha1) | [./modules/application/main.tf](modules/application/main.tf#L178) | Computes the SHA1 of the API resources for redeployment purposes|
-| <a name="function_toset"></a> [toset](https://developer.hashicorp.com/terraform/language/functions/toset) | [./modules/database/main.tf](modules/database/main.tf#L3) | Converting `var.table_names` to a set for iteration purposes|
-| <a name="function_lower"></a> [lower](https://developer.hashicorp.com/terraform/language/functions/lower) | [./main.tf](main.tf#L3) | Forcing lowercase for `var.vpc_name` to mantain styling consistency|
+| <a name="function_jsonencode"></a> [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode) | [modules/compute/main.tf](modules/compute/main.tf#L16) | Encode the `container_definitions` to a string from a JSON format|
+| <a name="function_sha1"></a> [sha1](https://developer.hashicorp.com/terraform/language/functions/sha1) | [modules/application/main.tf](modules/application/main.tf#L178) | Computes the SHA1 of the API resources for redeployment purposes|
+| <a name="function_toset"></a> [toset](https://developer.hashicorp.com/terraform/language/functions/toset) | [modules/database/main.tf](modules/database/main.tf#L3) | Converting `var.table_names` to a set for iteration purposes|
+| <a name="function_lower"></a> [lower](https://developer.hashicorp.com/terraform/language/functions/lower) | [main.tf](main.tf#L3) | Forcing lowercase for `var.vpc_name` to mantain styling consistency|
 
 ## Meta-arguments
+| Name | Source | Purpose |
+|------|--------|---------|
+| <a name="meta_for_each"></a> [for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each) | [modules/database/main.tf](modules/database/main.tf#L3) | Iterate the table names|
+| <a name="meta_lifecycle"></a> [lifecycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle) | [modules/application/main.tf](modules/application/main.tf#L186) | Avoid destroying the API Gateway first when triggering redeployment|
+| <a name="meta_depends_on"></a> [depends_on](https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on) | [modules/application/main.tf](modules/application/main.tf#L190) | Avoid creating the API deployment before the integrations and methods are instantiated|
 <!-- END_TF_DOCS -->
